@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 60" width="840" height="60" role="img">
+<defs>
+<filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="blur" x="-40%" y="-60%" width="180%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#110d26"/><stop offset="1" stop-color="#07060f"/></linearGradient>
+<linearGradient id="rain" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="840" y2="0" spreadMethod="repeat"><stop offset="0.000" stop-color="#00f0ff"/><stop offset="0.167" stop-color="#9d6bff"/><stop offset="0.333" stop-color="#ff2bd6"/><stop offset="0.500" stop-color="#ff8a3c"/><stop offset="0.667" stop-color="#ffe14d"/><stop offset="0.833" stop-color="#b6ff3c"/><stop offset="1.000" stop-color="#00f0ff"/><animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="840 0" dur="7s" repeatCount="indefinite"/></linearGradient>
+</defs>
+<style>
+.pulse{animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
+.flick{animation:flick 6s linear infinite}
+@keyframes flick{0%,40%,44%,48%,100%{opacity:1}42%{opacity:.25}46%{opacity:.55}}
+.in{opacity:0;animation:in .7s ease-out forwards}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.run{animation:run linear infinite}
+@keyframes run{from{stroke-dashoffset:16}to{stroke-dashoffset:-320}}
+.orbit{animation:orbit 3.2s linear infinite}
+@keyframes orbit{to{stroke-dashoffset:0}}
+.blink{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.grow{transform-box:fill-box;transform-origin:bottom;animation:grow 1.6s cubic-bezier(.2,.8,.2,1) both}
+@keyframes grow{from{transform:scaleY(0)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.in{opacity:1!important}}
+</style>
+<rect x="1.5" y="1.5" width="837" height="57" rx="0" fill="none" stroke="none" stroke-width="1.5"/>
+
+<text x="22" y="37" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="14" font-weight="700" fill="#ffe14d">01</text>
+<text x="64" y="38" textLength="120" lengthAdjust="spacingAndGlyphs" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="24" fill="none" stroke="#00f0ff" stroke-width="5" opacity=".6" filter="url(#blur)">AHORA</text>
+<text x="64" y="38" textLength="120" lengthAdjust="spacingAndGlyphs" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="24" fill="#00f0ff" fill-opacity=".2" stroke="#00f0ff" stroke-width="1.2">AHORA</text>
+<rect x="208" y="28" width="610" height="2" rx="1" fill="url(#rain)"/>
+<circle cx="818" cy="29" r="4" fill="#00f0ff" class="pulse"/>
+
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 236" width="840" height="236" role="img">
+<defs>
+<filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="blur" x="-40%" y="-60%" width="180%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#110d26"/><stop offset="1" stop-color="#07060f"/></linearGradient>
+<linearGradient id="rain" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="840" y2="0" spreadMethod="repeat"><stop offset="0.000" stop-color="#00f0ff"/><stop offset="0.167" stop-color="#9d6bff"/><stop offset="0.333" stop-color="#ff2bd6"/><stop offset="0.500" stop-color="#ff8a3c"/><stop offset="0.667" stop-color="#ffe14d"/><stop offset="0.833" stop-color="#b6ff3c"/><stop offset="1.000" stop-color="#00f0ff"/><animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="840 0" dur="7s" repeatCount="indefinite"/></linearGradient>
+</defs>
+<style>
+.pulse{animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
+.flick{animation:flick 6s linear infinite}
+@keyframes flick{0%,40%,44%,48%,100%{opacity:1}42%{opacity:.25}46%{opacity:.55}}
+.in{opacity:0;animation:in .7s ease-out forwards}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.run{animation:run linear infinite}
+@keyframes run{from{stroke-dashoffset:16}to{stroke-dashoffset:-320}}
+.orbit{animation:orbit 3.2s linear infinite}
+@keyframes orbit{to{stroke-dashoffset:0}}
+.blink{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.grow{transform-box:fill-box;transform-origin:bottom;animation:grow 1.6s cubic-bezier(.2,.8,.2,1) both}
+@keyframes grow{from{transform:scaleY(0)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.in{opacity:1!important}}
+</style>
+<rect x="1.5" y="1.5" width="837" height="233" rx="18" fill="url(#bg)" stroke="#00f0ff" stroke-width="1.5"/>
+
+<rect x="20" y="26" width="4" height="184" rx="2" fill="#00f0ff" class="pulse"/>
+<text x="42" y="68" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="40" fill="none" stroke="#00f0ff" stroke-width="1.5">01</text>
+<text x="112" y="52" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="700" font-size="25" fill="#ffffff">SAES 2.0</text>
+<text x="112" y="76" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="11.5" font-weight="700" letter-spacing="2" fill="#00f0ff">PROYECTO EN EQUIPO / MI PARTE: EL CHATBOT</text>
+<text x="112" y="106" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="13.5" fill="#d6d2f0">Sistema escolar estilo SAES. Yo desarrollé el módulo de</text>
+<text x="112" y="127" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="13.5" fill="#d6d2f0">chatbot: migré de Gemini a Groq con LLaMA 3.3 70B y las</text>
+<text x="112" y="148" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="13.5" fill="#d6d2f0">respuestas cambian según el rol (alumno o profesor)</text>
+<text x="112" y="169" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="13.5" fill="#d6d2f0">detectado desde el JWT.</text>
+<g class="in" style="animation-delay:0.00s"><rect x="112" y="188" width="117" height="24" rx="12" fill="#00f0ff" fill-opacity=".09" stroke="#00f0ff" stroke-width="1.2"/><text x="170.5" y="204.5" text-anchor="middle" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="12.5" fill="#00f0ff">React + Vite</text></g><g class="in" style="animation-delay:0.15s"><rect x="239" y="188" width="78" height="24" rx="12" fill="#00f0ff" fill-opacity=".09" stroke="#00f0ff" stroke-width="1.2"/><text x="278" y="204.5" text-anchor="middle" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="12.5" fill="#00f0ff">Node.js</text></g><g class="in" style="animation-delay:0.30s"><rect x="327" y="188" width="63" height="24" rx="12" fill="#00f0ff" fill-opacity=".09" stroke="#00f0ff" stroke-width="1.2"/><text x="358.5" y="204.5" text-anchor="middle" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="12.5" fill="#00f0ff">MySQL</text></g><g class="in" style="animation-delay:0.45s"><rect x="400" y="188" width="47" height="24" rx="12" fill="#00f0ff" fill-opacity=".09" stroke="#00f0ff" stroke-width="1.2"/><text x="423.5" y="204.5" text-anchor="middle" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="12.5" fill="#00f0ff">JWT</text></g><g class="in" style="animation-delay:0.60s"><rect x="457" y="188" width="55" height="24" rx="12" fill="#00f0ff" fill-opacity=".09" stroke="#00f0ff" stroke-width="1.2"/><text x="484.5" y="204.5" text-anchor="middle" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="12.5" fill="#00f0ff">Groq</text></g>
+
+<g font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="11">
+<rect x="622" y="44" width="130" height="32" rx="12" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
+<text x="636" y="64" fill="#00f0ff">rol: alumno</text>
+<rect x="668" y="90" width="130" height="32" rx="12" fill="none" stroke="#ff2bd6" stroke-width="1.5"/>
+<circle cx="716" cy="106" r="4" fill="#ff2bd6" class="pulse" style="animation-duration:1.2s;animation-delay:0s"/><circle cx="733" cy="106" r="4" fill="#ff2bd6" class="pulse" style="animation-duration:1.2s;animation-delay:0.2s"/><circle cx="750" cy="106" r="4" fill="#ff2bd6" class="pulse" style="animation-duration:1.2s;animation-delay:0.4s"/>
+<rect x="622" y="136" width="130" height="32" rx="12" fill="none" stroke="#ffe14d" stroke-width="1.5"/>
+<text x="636" y="156" fill="#ffe14d">rol: profesor</text>
+</g>
+<text x="816" y="218" text-anchor="end" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="11" letter-spacing="1" fill="#ffffff" class="pulse">ABRIR REPO (rama chatbot) -&gt;</text>
+
+</svg>
