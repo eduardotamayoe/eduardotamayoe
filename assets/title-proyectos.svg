@@ -24,7 +24,7 @@
 </style>
 <rect x="1.5" y="1.5" width="837" height="57" rx="0" fill="none" stroke="none" stroke-width="1.5"/>
 
-<text x="22" y="37" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="14" font-weight="700" fill="#ffe14d">02</text>
+<text x="22" y="37" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="14" font-weight="700" fill="#ffe14d">03</text>
 <text x="64" y="38" textLength="216" lengthAdjust="spacingAndGlyphs" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="24" fill="none" stroke="#ff2bd6" stroke-width="5" opacity=".6" filter="url(#blur)">PROYECTOS</text>
 <text x="64" y="38" textLength="216" lengthAdjust="spacingAndGlyphs" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="800" font-size="24" fill="#ff2bd6" fill-opacity=".2" stroke="#ff2bd6" stroke-width="1.2">PROYECTOS</text>
 <rect x="304" y="28" width="514" height="2" rx="1" fill="url(#rain)"/>

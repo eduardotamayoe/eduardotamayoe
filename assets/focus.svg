@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 240" width="840" height="240" role="img">
+<defs>
+<filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="blur" x="-40%" y="-60%" width="180%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#110d26"/><stop offset="1" stop-color="#07060f"/></linearGradient>
+<linearGradient id="rain" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="840" y2="0" spreadMethod="repeat"><stop offset="0.000" stop-color="#00f0ff"/><stop offset="0.167" stop-color="#9d6bff"/><stop offset="0.333" stop-color="#ff2bd6"/><stop offset="0.500" stop-color="#ff8a3c"/><stop offset="0.667" stop-color="#ffe14d"/><stop offset="0.833" stop-color="#b6ff3c"/><stop offset="1.000" stop-color="#00f0ff"/><animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="840 0" dur="7s" repeatCount="indefinite"/></linearGradient>
+</defs>
+<style>
+.pulse{animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
+.flick{animation:flick 6s linear infinite}
+@keyframes flick{0%,40%,44%,48%,100%{opacity:1}42%{opacity:.25}46%{opacity:.55}}
+.in{opacity:0;animation:in .7s ease-out forwards}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.run{animation:run linear infinite}
+@keyframes run{from{stroke-dashoffset:16}to{stroke-dashoffset:-320}}
+.orbit{animation:orbit 3.2s linear infinite}
+@keyframes orbit{to{stroke-dashoffset:0}}
+.blink{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.grow{transform-box:fill-box;transform-origin:bottom;animation:grow 1.6s cubic-bezier(.2,.8,.2,1) both}
+@keyframes grow{from{transform:scaleY(0)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.in{opacity:1!important}}
+</style>
+<rect x="1.5" y="1.5" width="837" height="237" rx="18" fill="url(#bg)" stroke="url(#rain)" stroke-width="1.5"/>
+<text x="420" y="38" text-anchor="middle" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="14.5" fill="#e9e6ff">Estudio Ingeniería en IA y me especializo en <tspan fill="#ffe14d" font-weight="700">construir con ella</tspan>.</text><g class="in" style="animation-delay:0.2s">
+<rect x="28" y="62" width="250" height="150" rx="14" fill="#00f0ff" fill-opacity=".06" stroke="#00f0ff" stroke-width="1.3"/>
+<rect x="28" y="62" width="250" height="150" rx="14" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-dasharray="50 726" stroke-dashoffset="776" class="orbit" style="animation-duration:4s"/>
+<circle cx="52" cy="88" r="4" fill="#00f0ff" stroke="#00f0ff" stroke-width="1.4" class="pulse" style="animation-delay:-0s"/><circle cx="66" cy="88" r="4" fill="none" stroke="#00f0ff" stroke-width="1.4" class="pulse" style="animation-delay:-0.5s"/><circle cx="80" cy="88" r="4" fill="none" stroke="#00f0ff" stroke-width="1.4" class="pulse" style="animation-delay:-1s"/>
+<text x="48" y="124" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="700" font-size="19" fill="#ffffff">LLMs en producto</text>
+<text x="48" y="148" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="12.5" fill="#d6d2f0">Integro modelos de lenguaje</text><text x="48" y="166" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="12.5" fill="#d6d2f0">en aplicaciones reales, como</text><text x="48" y="184" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="12.5" fill="#d6d2f0">el chatbot de SAES 2.0.</text>
+</g><g class="in" style="animation-delay:0.55s">
+<rect x="295" y="62" width="250" height="150" rx="14" fill="#ff2bd6" fill-opacity=".06" stroke="#ff2bd6" stroke-width="1.3"/>
+<rect x="295" y="62" width="250" height="150" rx="14" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-dasharray="50 726" stroke-dashoffset="776" class="orbit" style="animation-duration:4.6s"/>
+<circle cx="319" cy="88" r="4" fill="none" stroke="#ff2bd6" stroke-width="1.4" class="pulse" style="animation-delay:-0s"/><circle cx="333" cy="88" r="4" fill="#ff2bd6" stroke="#ff2bd6" stroke-width="1.4" class="pulse" style="animation-delay:-0.5s"/><circle cx="347" cy="88" r="4" fill="none" stroke="#ff2bd6" stroke-width="1.4" class="pulse" style="animation-delay:-1s"/>
+<text x="315" y="124" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="700" font-size="19" fill="#ffffff">Agentes de IA</text>
+<text x="315" y="148" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="12.5" fill="#d6d2f0">Construyo y uso agentes que</text><text x="315" y="166" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="12.5" fill="#d6d2f0">razonan, llaman herramientas</text><text x="315" y="184" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="12.5" fill="#d6d2f0">y automatizan tareas.</text>
+</g><g class="in" style="animation-delay:0.8999999999999999s">
+<rect x="562" y="62" width="250" height="150" rx="14" fill="#ff8a3c" fill-opacity=".06" stroke="#ff8a3c" stroke-width="1.3"/>
+<rect x="562" y="62" width="250" height="150" rx="14" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-dasharray="50 726" stroke-dashoffset="776" class="orbit" style="animation-duration:5.2s"/>
+<circle cx="586" cy="88" r="4" fill="none" stroke="#ff8a3c" stroke-width="1.4" class="pulse" style="animation-delay:-0s"/><circle cx="600" cy="88" r="4" fill="none" stroke="#ff8a3c" stroke-width="1.4" class="pulse" style="animation-delay:-0.5s"/><circle cx="614" cy="88" r="4" fill="#ff8a3c" stroke="#ff8a3c" stroke-width="1.4" class="pulse" style="animation-delay:-1s"/>
+<text x="582" y="124" font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="700" font-size="19" fill="#ffffff">Claude</text>
+<text x="582" y="148" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="12.5" fill="#d6d2f0">Trabajo con Claude y Claude</text><text x="582" y="166" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="12.5" fill="#d6d2f0">Code como parte de mi flujo</text><text x="582" y="184" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,'Liberation Mono',Menlo,monospace" font-size="12.5" fill="#d6d2f0">de desarrollo.</text>
+</g>
+</svg>

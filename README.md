@@ -16,6 +16,10 @@
 
 <img src="assets/now.svg" width="100%" alt="Estudio la carrera y construyo proyectos de NLP y ML aplicado. Practico deep learning con PyTorch: redes desde cero y transfer learning. Integro modelos de lenguaje en aplicaciones web full-stack.">
 
+<img src="assets/title-enfoque.svg" width="100%" alt="Enfoque">
+
+<img src="assets/focus.svg" width="100%" alt="Estudio Ingeniería en IA y me especializo en construir con ella. LLMs en producto: integro modelos de lenguaje en aplicaciones reales, como el chatbot de SAES 2.0. Agentes de IA: construyo y uso agentes que razonan, llaman herramientas y automatizan tareas. Claude: trabajo con Claude y Claude Code como parte de mi flujo de desarrollo.">
+
 <img src="assets/title-proyectos.svg" width="100%" alt="Proyectos">
 
 <a href="https://github.com/iangusi/saes/tree/chatbot"><img src="assets/project-saes.svg" width="100%" alt="SAES 2.0: sistema escolar estilo SAES hecho en equipo. Mi parte fue el módulo de chatbot: migración de Gemini a Groq con LLaMA 3.3 70B y respuestas según el rol (alumno o profesor) detectado desde el JWT. React + Vite, Node.js, MySQL, JWT, Groq."></a>
@@ -27,5 +31,3 @@
 <img src="assets/title-stack.svg" width="100%" alt="Stack">
 
 <img src="assets/stack.svg" width="100%" alt="IA/ML: Python, PyTorch, TensorFlow, scikit-learn, NLP clásico (TF-IDF, Word2Vec), Transformers (BETO). Web: React, Node.js, JavaScript. Datos: MySQL, BigQuery (SQL). Cloud y herramientas: Azure, Google Colab, Git, Linux.">
-
-<img src="assets/footer.svg" width="100%" alt="Si quieres hablar de algún proyecto, escríbeme por correo.">
